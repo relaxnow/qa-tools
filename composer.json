@@ -1,0 +1,34 @@
+{
+    "name": "ibuildings/qa-tools",
+    "description": "Ibuildings standard QA Tools",
+    "require": {
+        "php": ">=5.3.3",
+        "squizlabs/php_codesniffer": "~1.4",
+        "phpmd/phpmd": "~1.5",
+        "symfony/console": "~2.1",
+        "symfony/filesystem": "~2.1",
+        "twig/twig": "~1.12",
+        "sensiolabs/security-checker": "~1.1",
+        "phpunit/phpunit": "~3.7",
+        "sebastian/phpcpd": "~1.4",
+        "behat/behat": "~2.5",
+        "behat/mink": "*",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium2-driver": "*"
+    },
+    "bin": [
+        "bin/qa-tools",
+        "bin/jshint"
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "autoload" : {
+        "psr-0": {
+            "Ibuildings": "src/"
+        }
+    }
+}
